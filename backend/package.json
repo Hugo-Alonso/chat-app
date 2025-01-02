@@ -2,14 +2,16 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
+    "backend": "file:",
     "bcryptjs": "^2.4.3",
     "cloudinary": "^2.5.1",
     "cookie-parse": "^0.4.0",
@@ -18,5 +20,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.3",
     "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
