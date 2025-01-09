@@ -26,7 +26,7 @@ export const getMessages = async (req, res) => {
             ]
         })
 
-        status(200).json(messages)
+        res.status(200).json(messages);
     } catch (error) {
         console.log("Error in getMessages controller: ", error.message);
         res.status(500).json({ error: "Internal Server Error "}) 
@@ -57,7 +57,7 @@ export const sendMessage = async (req, res) => {
 
         // Todo: realtime functionality goes here => socket.io
 
-        res.status(200).json(newMessage);
+        res.status(201).json(newMessage);
    } catch (error) {
         console.log("Error in sendMessage controller: ", error.message);
         res.status(500).json({ error: "Internal Server Error "}) 
