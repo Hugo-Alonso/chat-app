@@ -6,9 +6,11 @@ import SettingsPage from "./pages/SettingsPage";
 import ProfilePage from "./pages/ProfilePage";
 import HomePage from "./pages/HomePage";
 import { axiosInstance } from "./lib/axios";
+import { useAuthStore } from "./store/useAuthStore";
 
 const App = () => {
   
+  const {authUser} = useAuthStore();
   return (
     <div>
 
