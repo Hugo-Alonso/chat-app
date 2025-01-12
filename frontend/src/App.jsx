@@ -8,6 +8,9 @@ import HomePage from "./pages/HomePage";
 import { useAuthStore } from "./store/useAuthStore";
 import { useEffect } from "react";
 
+
+import { Loader } from "lucide-react";
+
 const App = () => {
   
   const { authUser, checkAuth, isCheckingAuth } = useAuthStore();
