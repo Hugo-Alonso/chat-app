@@ -34,11 +34,11 @@ const App = () => {
       <NavBar />
 
       <Routes>
-        <Route path="/" element={ authUser ? <HomePage /> : <Navigate to="/login" />}/>
-        <Route path="/signup" element={<SignUpPage />}/>
-        <Route path="/login" element={<LoginPage />}/>
-        <Route path="/settings" element={ authUser ? <SettingsPage /> : <Navigate to="/login" />} />
-        <Route path="/profile" element={<ProfilePage />}/>
+        <Route path="/" element={ authUser ? <HomePage /> : <Navigate to="/login" />} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/profile" element={ authUser ? <ProfilePage /> : <Navigate to="/login" />} />
       </Routes>
 
     </div>
