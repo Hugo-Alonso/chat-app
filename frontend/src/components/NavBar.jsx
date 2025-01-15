@@ -1,4 +1,4 @@
-import { MessageSquare } from "lucide-react";
+import { MessageSquare, Settings } from "lucide-react";
 import { useAuthStore } from "../store/useAuthStore"
 import { Link } from "react-router-dom";
 
@@ -17,6 +17,21 @@ const NavBar = () => {
                 </div>
                 <h1 className="text-lg font-bold">Chatty</h1>
           </Link>
+
+          <div className="flex items-center gap-2">
+            <Link
+              to={"/settings"}
+              className={`
+              btn btn-sm gap-2 transition-colors
+              
+              `}
+            >
+              <Settings className="w-4 h-4" />
+              <span className="hidden sm:inline">Settings</span>
+            </Link>
+          </div>
+
+
         </div>
       </div>
     </header>
