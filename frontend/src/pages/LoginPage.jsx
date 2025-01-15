@@ -1,3 +1,7 @@
+import { useState } from "react";
+import { Eye, EyeOff, Link, Loader2, Mail, MessageSquare } from "lucide-react";
+import AuthImagePattern from "../components/AuthImagePattern";
+
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
